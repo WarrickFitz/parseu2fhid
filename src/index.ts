@@ -247,22 +247,6 @@ class uDevice extends EventEmitter{
             this.emit('completed', true);
         }
 
-        // Decode APDU frame status
-        // var status = res.readUInt16BE(res.length-2);
-        // console.log("status:" + status.toString(16));
-
-        // this.finalStatusCode = status;
-
-        // const resultBuf = Buffer.alloc(remainingData.length);
-        // console.log(resultBuf);
-
-        // var ver = new TextDecoder("utf-8").decode(data);
-        // const decoder = new StringDecoder('utf8');
-
-        //const ver = Buffer.from(data);
-        // console.log(decoder.write(remainingData));
-        // this.emit('completed', true);
-
     }
 
 }
